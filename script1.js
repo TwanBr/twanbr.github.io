@@ -18,7 +18,7 @@ $(document).ready(function(){
       // $('#weather').html("<h3 class='loading'>Your weather is on its way!</h3>");
       $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ab3251240497651078458a349a360dd7&units=metric", function(json) {
         if (json.message != "Error: Not found city"){
-          if (json.message != city) { //newly added If/else, please verify it works @myself
+          if (json.message == city) { //newly added If/else, please verify it works @myself
             $('#weather').html("<h3 class='loading'>The current temperature in " + json.name + " is: " + json.main.temp + " degrees centigrade.</p>");
           } else {
             $('#weather').html("<h3 class='loading'>No results were found for ''" + city + "'. Please make sure you enter a valid city name.");
