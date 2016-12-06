@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Web Technology individual assignment 1: building an interactive, responsive website; able to retrieve data from REST APIs."> 
+    <meta name="author" content="Anonymous">
+    <link rel="icon" href="favicon.ico">
+
+    <title>WebTech Assignment1</title>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script1.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body style="background-image:url('assignment1bg.jpg');background-size:100% 100%">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Web Technology Assignment 1</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Assignment 1 - Current Weather (Temperature)</h1> <!-- <hr />
+        <img src="http://1.bp.blogspot.com/-5iBysovGPXA/VBWrvRzQJdI/AAAAAAAAAMo/0_Zf9jDZH-w/s1600/hello%2Bbanner.png" class="img-rounded center-block"></img> -->
+      </div>
+        <p class="lead">Current Temperature in Cities</p>
+        <p>To find out what the current temperature is in a city of your choice, enter its name below!</p>
+        <p class="text-justify"><em>Keep in mind that the API from openweathermap might return a different city than expected due to guessing work when the goal is unclear.</em></p>
+        <section id="fetch" class="form-inline">
+          <input type="text" placeholder="Enter a city name" id="term" class="form-control" />
+          <button type="button" id="search" class="btn btn-primary">Search</button>
+        </section>
+        <section id="weather">
+        </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Made with <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
